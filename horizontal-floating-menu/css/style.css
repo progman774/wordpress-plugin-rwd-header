@@ -1,0 +1,51 @@
+/* css/style.css */
+
+@media (max-width: 767px) {
+  #horizontal-floating-menu {
+    display: block !important;
+  }
+  .float-menu-1 {
+    visibility: hidden !important;
+  }
+}
+
+#horizontal-floating-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  z-index: 9999;
+}
+
+#horizontal-floating-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#horizontal-floating-menu ul li {
+  margin: 0 10px;
+  display: block;
+  width: 100%;
+}
+
+#horizontal-floating-menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  max-width: 100% !important;
+  border: 1px solid;
+  text-align: center;
+  line-height: 30px !important;
+}
+
+
+#horizontal-floating-menu ul li a:hover {
+  background: #444;
+}
